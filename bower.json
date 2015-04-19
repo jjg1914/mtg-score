@@ -5,5 +5,13 @@
     "angular-gestures": "~0.3.0",
     "sprintf": "~1.0.2",
     "angular-ui-router": "~0.2.13"
+  },
+  "overrides": {
+    "sprintf": {
+      "main": [
+        "src/sprintf.js",
+        "src/angular-sprintf.js"
+      ]
+    }
   }
 }

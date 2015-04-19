@@ -1,16 +1,17 @@
 .mtg-score-board
   .mtg-score(ng-repeat="player in players")
     .mtg-score-player {{ player.name }}
-    .mtg-score-display(hm-tap="score(player,-1)" hm-hold="score(player,1)")
-      span.mtg-jumbo {{ player.score }}
+    .mtg-score-display
+      span.mtg-jumbo(hm-tap="score(player,-1)" hm-hold="score(player,1)")
+        | {{ player | mtgScoreFormat : settings.initialScore }}
     .mtg-score-history-latest(ng-if="player.historyLatest != null")
       span(ng-class="{ 'mtg-bg-negative': player.historyLatest < 0, 'mtg-bg-positive': player.historyLatest >= 0 }")
-        | {{ "%+i" | mtgSprintf : player.historyLatest }}
+        | {{ "%+i" | sprintf : player.historyLatest }}
     .mtg-score-history
       .mtg-score-history-item(
         ng-class="{ 'mtg-text-negative': item < 0, 'mtg-text-positive': item >= 0 }"
         ng-repeat="item in player.history track by $index")
-        | {{ "%+i" | mtgSprintf : item }}
+        | {{ "%+i" | sprintf : item }}
     .mtg-score-control
       .mtg-score-control-item(hm-tap="score(player,-5)") -5
       .mtg-score-control-item(hm-tap="score(player,+5)") +5
