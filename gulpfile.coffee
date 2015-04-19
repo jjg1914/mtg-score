@@ -25,7 +25,7 @@ gulp.task "build", ->
         .pipe plugins.sourcemaps.init()
         .pipe tplFilter
         .pipe plugins.jade()
-        .pipe plugins.angularTemplatecache module: "app"
+        .pipe plugins.angularTemplatecache module: "mtg"
         .pipe tplFilter.restore()
         .pipe coffeeFilter
         .pipe plugins.coffee()
