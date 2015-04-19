@@ -1,1 +1,1 @@
-angular.module "mtg", [ "angular-gestures" ]
+angular.module "mtg", [ "ui.router", "angular-gestures" ]

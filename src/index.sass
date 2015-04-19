@@ -1,4 +1,4 @@
-html, body
+html, body, main
   height: 100%
 
 body
@@ -32,15 +32,21 @@ body
   background: #DD2828
 
 .mtg-score-board
-  clear: both
   height: 100%
 
 .mtg-score
-  float: left
   position: relative
   text-align: center
-  width: 50%
-  height: 100%
+  height: 50%
+
+@media all and (min-width: 25em)
+  .mtg-score-board
+    clear: both
+
+  .mtg-score
+    float: left
+    width: 50%
+    height: 100%
 
 .mtg-score-display
   position: absolute
