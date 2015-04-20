@@ -9,4 +9,9 @@ html(lang="en")
     //- inject:js
     //- endinject
   body(ng-app="mtg" ng-controller="mtgController")
+    header
+      nav
+        a.mtg-nav(ui-sref="menu") Menu
+        a.mtg-nav(ui-sref="index") Score
+        a.mtg-nav(ui-sref="settings") Settings
     main(ui-view hm-swipe="navigate($event)")

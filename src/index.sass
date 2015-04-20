@@ -2,14 +2,46 @@ html, body, main
   height: 100%
 
 body
-  position: relative
   color: #282828
   background: #EEEEEE
   font-size: 150%
   font-family: sans-serif
   font-weight: 300
+  margin: 0
+
+header
+  position: fixed
+  z-index: 1
+  color: #EEEEEE
+  background: #282828
+  width: 100%
+  padding: 0.5em 0.5em 0.25em
+  box-sizing: border-box
+
+main
+  position: relative
   max-width: 35em
   margin: 0 auto
+  padding-top: 1.75em
+  box-sizing: border-box
+
+@media all and (min-width: 25em)
+  main 
+    max-height: 15em
+
+nav
+  clear: both
+  overflow: auto
+  text-align: center
+  max-width: 35em
+  margin: 0 auto
+  box-sizing: border-box
+
+.mtg-nav
+  color: inherit
+  float: left
+  text-decoration: none
+  width: 33.3%
 
 .mtg-jumbo
   font-size: 400%
@@ -92,24 +124,8 @@ body
 
 .mtg-score-history-latest
   position: absolute
-  top: 2em
-  left: 0
-  right: 0
-
-.mtg-score-history
-  position: absolute
-  right: 0.5em
-  top: 2em
-  text-align: right
-
-.mtg-score-history-item
-  font-size: 75%
-
-.mtg-score-history-latest
-  position: absolute
-  top: 2em
-  left: 0
-  right: 0
+  top: 1.75em
+  right: 2.5em
 
 .mtg-settings,
 .mtg-menu
