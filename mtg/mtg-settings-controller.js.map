@@ -1,0 +1,1 @@
+{"version":3,"sources":["mtg/mtg-settings-controller.coffee"],"names":[],"mappings":"AAAA;AAAA,EAAA,OAAO,CAAC,MAAR,CAAe,KAAf,CAAqB,CAAC,UAAtB,CAAiC,uBAAjC,EAA0D,SAAC,MAAD,GAAA,CAA1D,CAAA,CAAA;AAAA","file":"mtg/mtg-settings-controller.js","sourceRoot":"/source/","sourcesContent":["angular.module(\"mtg\").controller \"mtgSettingsController\", ($scope) ->\n"]}

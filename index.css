@@ -2,46 +2,55 @@ html, body, main {
   height: 100%; }
 
 body {
+  position: relative;
   color: #282828;
   background: #EEEEEE;
   font-size: 150%;
   font-family: sans-serif;
   font-weight: 300;
-  margin: 0; }
-
-header {
-  position: fixed;
-  z-index: 1;
-  color: #EEEEEE;
-  background: #282828;
-  width: 100%;
-  padding: 0.5em 0.5em 0.25em;
-  box-sizing: border-box; }
+  padding: 1em 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 main {
   position: relative;
   max-width: 35em;
   margin: 0 auto;
-  padding-top: 1.75em;
   box-sizing: border-box; }
+
+nav {
+  display: none;
+  z-index: 1;
+  color: #EEEEEE;
+  background: #282828;
+  position: absolute;
+  bottom: 0.5em;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  text-align: center;
+  padding: 0.25em;
+  border-radius: 0.5em;
+  opacity: 0.9; }
+
+body:hover nav {
+  display: block; }
+
+.nav {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 0.5em;
+  outline: none; }
 
 @media all and (min-width: 25em) {
   main {
     max-height: 15em; } }
-
-nav {
-  clear: both;
-  overflow: auto;
-  text-align: center;
-  max-width: 35em;
-  margin: 0 auto;
-  box-sizing: border-box; }
-
-.mtg-nav {
-  color: inherit;
-  float: left;
-  text-decoration: none;
-  width: 33.3%; }
 
 .mtg-jumbo {
   font-size: 400%; }
@@ -87,35 +96,15 @@ nav {
   position: absolute;
   top: 50%;
   width: 100%;
+  cursor: pointer;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%); }
 
-.mtg-score-control, .mtg-score-player {
-  position: absolute;
-  left: 0;
-  right: 0; }
-
-.mtg-score-player {
-  top: 0.5em; }
-
-.mtg-score-control {
-  bottom: 0.5em;
-  left: 0;
-  right: 0;
-  clear: both;
-  padding: 0 1em;
-  box-sizing: border-box; }
-
-.mtg-score-control-item {
-  float: left;
-  text-align: center;
-  width: 25%; }
-
 .mtg-score-history {
   position: absolute;
   right: 0.5em;
-  top: 2em;
+  top: 1em;
   text-align: right; }
 
 .mtg-score-history-item {
@@ -123,24 +112,26 @@ nav {
 
 .mtg-score-history-latest {
   position: absolute;
-  top: 1.75em;
-  right: 2.5em; }
+  top: 1.5em;
+  text-align: center;
+  width: 100%;
+  cursor: pointer; }
 
 .mtg-settings, .mtg-menu {
   list-style: none;
   padding: 0;
-  margin: 1em 1em; }
+  margin: 0; }
 
 .mtg-menu-item {
   text-align: center;
-  margin: 1em 0; }
+  margin-bottom: 1em; }
 
 .mtg-form-input {
   position: relative;
   clear: both; }
 
 form {
-  margin: 1em; }
+  margin: 0 1em; }
 
 label {
   float: left;
