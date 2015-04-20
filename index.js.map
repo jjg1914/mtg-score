@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.coffee"],"names":[],"mappings":"AAAA;AAAA,EAAA,OAAO,CAAC,MAAR,CAAe,KAAf,EAAsB,CAAE,WAAF,EAAe,kBAAf,EAAmC,SAAnC,CAAtB,CAAA,CAAA;AAAA","file":"index.js","sourceRoot":"/source/","sourcesContent":["angular.module \"mtg\", [ \"ui.router\", \"angular-gestures\", \"sprintf\" ]\n"]}
