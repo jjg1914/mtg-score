@@ -9,10 +9,16 @@
   },
   "overrides": {
     "sprintf": {
-      "main": [
-        "src/sprintf.js",
-        "src/angular-sprintf.js"
-      ]
+      "main": {
+        "development": [
+          "src/sprintf.js",
+          "src/angular-sprintf.js"
+        ],
+        "production": [
+          "dist/sprintf.min.js",
+          "dist/angular-sprintf.min.js"
+        ]
+      }
     }
   }
 }

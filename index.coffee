@@ -8,10 +8,12 @@ livereload        = require "livereload"
 app = connect()
 
 app.use morgan "dev"
-app.use connectLivereload()
-app.use "/bower_components", serveStatic "bower_components"
+
+if process.env.NODE_ENV == "development"
+  livereload.createServer().watch __dirname + "/public"
+  app.use connectLivereload()
+  app.use "/bower_components", serveStatic "bower_components"
+
 app.use serveStatic "public"
 
 http.createServer(app).listen 8080
-
-livereload.createServer().watch __dirname + "/public"
