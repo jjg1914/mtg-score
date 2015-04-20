@@ -64,7 +64,7 @@ gulp.task "build", ->
     .pipe plugins.jade pretty: isDevelopment
     .pipe gulp.dest "public"
 
-gulp.task "deploy", ->
+gulp.task "deploy", [ "build" ], ->
   gulp.src "public/**/*"
     .pipe plugins.ghPages()
 
