@@ -8,6 +8,13 @@ index.min.css.map
 index.min.js
 index.min.js.map
 manifest.json
+assets/apple-touch-icon.png
+assets/apple-touch-icon.xcf
+bower_components/angular-gestures/LICENSE.md
+bower_components/angular-gestures/README.md
+bower_components/angular-gestures/bower.json
+bower_components/angular-gestures/gestures.js
+bower_components/angular-gestures/gestures.min.js
 bower_components/angular/README.md
 bower_components/angular/angular-csp.css
 bower_components/angular/angular.js
@@ -17,11 +24,6 @@ bower_components/angular/angular.min.js.map
 bower_components/angular/bower.json
 bower_components/angular/index.js
 bower_components/angular/package.json
-bower_components/angular-gestures/LICENSE.md
-bower_components/angular-gestures/README.md
-bower_components/angular-gestures/bower.json
-bower_components/angular-gestures/gestures.js
-bower_components/angular-gestures/gestures.min.js
 bower_components/angular-ui-router/CHANGELOG.md
 bower_components/angular-ui-router/CONTRIBUTING.md
 bower_components/angular-ui-router/LICENSE
@@ -67,25 +69,6 @@ bower_components/font-awesome/fonts/fontawesome-webfont.svg
 bower_components/font-awesome/fonts/fontawesome-webfont.ttf
 bower_components/font-awesome/fonts/fontawesome-webfont.woff
 bower_components/font-awesome/fonts/fontawesome-webfont.woff2
-bower_components/font-awesome/scss/_animated.scss
-bower_components/font-awesome/scss/_bordered-pulled.scss
-bower_components/font-awesome/scss/_core.scss
-bower_components/font-awesome/scss/_fixed-width.scss
-bower_components/font-awesome/scss/_icons.scss
-bower_components/font-awesome/scss/_larger.scss
-bower_components/font-awesome/scss/_list.scss
-bower_components/font-awesome/scss/_mixins.scss
-bower_components/font-awesome/scss/_path.scss
-bower_components/font-awesome/scss/_rotated-flipped.scss
-bower_components/font-awesome/scss/_stacked.scss
-bower_components/font-awesome/scss/_variables.scss
-bower_components/font-awesome/scss/font-awesome.scss
-bower_components/sprintf/dist/angular-sprintf.min.js
-bower_components/sprintf/dist/angular-sprintf.min.map
-bower_components/sprintf/dist/sprintf.min.js
-bower_components/sprintf/dist/sprintf.min.map
-bower_components/sprintf/src/angular-sprintf.js
-bower_components/sprintf/src/sprintf.js
 bower_components/font-awesome/less/animated.less
 bower_components/font-awesome/less/bordered-pulled.less
 bower_components/font-awesome/less/core.less
@@ -99,11 +82,30 @@ bower_components/font-awesome/less/path.less
 bower_components/font-awesome/less/rotated-flipped.less
 bower_components/font-awesome/less/stacked.less
 bower_components/font-awesome/less/variables.less
-bower_components/sprintf/test/test.js
+bower_components/font-awesome/scss/_animated.scss
+bower_components/font-awesome/scss/_bordered-pulled.scss
+bower_components/font-awesome/scss/_core.scss
+bower_components/font-awesome/scss/_fixed-width.scss
+bower_components/font-awesome/scss/_icons.scss
+bower_components/font-awesome/scss/_larger.scss
+bower_components/font-awesome/scss/_list.scss
+bower_components/font-awesome/scss/_mixins.scss
+bower_components/font-awesome/scss/_path.scss
+bower_components/font-awesome/scss/_rotated-flipped.scss
+bower_components/font-awesome/scss/_stacked.scss
+bower_components/font-awesome/scss/_variables.scss
+bower_components/font-awesome/scss/font-awesome.scss
 bower_components/sprintf/demo/angular.html
+bower_components/sprintf/dist/angular-sprintf.min.js
+bower_components/sprintf/dist/angular-sprintf.min.map
+bower_components/sprintf/dist/sprintf.min.js
+bower_components/sprintf/dist/sprintf.min.map
+bower_components/sprintf/src/angular-sprintf.js
+bower_components/sprintf/src/sprintf.js
+bower_components/sprintf/test/test.js
 
 
 NETWORK:
 *
 
-# hash: 3937216e25dff71d169c085b0d7dec3133b0ff52cbd0d55581f5bdf05bf5d46f
+# hash: b73302ae12c1704bdbabc930100dcc3683ff356b9c3b261b2fc1563c3463c418
