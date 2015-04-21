@@ -11,11 +11,12 @@ html(lang="en" manifest="mtg.appcache")
     //- inject:js
     //- endinject
   body(ng-app="mtg" ng-controller="mtgController")
-    nav
-      a.nav(ui-sref="menu")
-        i.fa.fa-navicon
-      a.nav(ui-sref="index")
-        i.fa.fa-home
-      a.nav(ui-sref="settings")
-        i.fa.fa-sliders
-    main(ui-view hm-swipe="navigate($event)")
+    main(hm-swipe="navigate($event)")
+      .mtg-ui-view(ui-view)
+      nav
+        a.nav(ui-sref="menu")
+          i.fa.fa-navicon
+        a.nav(ui-sref="index")
+          i.fa.fa-home
+        a.nav(ui-sref="settings")
+          i.fa.fa-sliders
