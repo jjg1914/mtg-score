@@ -1,4 +1,4 @@
-angular.module("mtg").directive "mtgNumberInput",  ->
+angular.module("mtg").directive "mtgNumberInput", (mtgVibrate)->
   restrict: "E"
   replace: true
   scope:
@@ -6,7 +6,11 @@ angular.module("mtg").directive "mtgNumberInput",  ->
   templateUrl: "mtg/mtg-number-input.tpl.html"
   link: ($scope) ->
     $scope.decrement = ->
-      $scope.value -= 10 if $scope.value > 10
+      if $scope.value > 10
+        $scope.value -= 10
+        mtgVibrate 20
 
     $scope.increment = ->
-      $scope.value += 10 if $scope.value < 50
+      if $scope.value < 50
+        $scope.value += 10
+        mtgVibrate 20
