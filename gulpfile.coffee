@@ -68,7 +68,11 @@ gulp.task "bower", ->
   gulp.src "bower_components/**/*", base: "."
     .pipe gulp.dest "public"
 
-gulp.task "manifest", [ "build", "bower" ], ->
+gulp.task "assets", ->
+  gulp.src "assets/**/*"
+    .pipe gulp.dest "public"
+
+gulp.task "manifest", [ "build", "bower", "assets" ], ->
   gulp.src "public/**/*"
     .pipe plugins.manifest
       hash: true
@@ -76,7 +80,7 @@ gulp.task "manifest", [ "build", "bower" ], ->
       exclude: "mtg.appcache"
     .pipe gulp.dest "public"
 
-gulp.task "deploy", [ "build" ], ->
+gulp.task "deploy", [ "manifest" ], ->
   gulp.src "public/**/*"
     .pipe plugins.ghPages()
 
