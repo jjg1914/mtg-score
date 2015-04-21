@@ -13,6 +13,7 @@ if process.env.NODE_ENV == "development"
   livereload.createServer().watch __dirname + "/public"
   app.use connectLivereload()
   app.use "/bower_components", serveStatic "bower_components"
+  app.use serveStatic "assets"
 
 app.use serveStatic "public"
 
