@@ -2,14 +2,14 @@ CACHE MANIFEST
 
 
 CACHE:
+apple-touch-icon.png
+apple-touch-icon.xcf
 index.html
 index.min.css
 index.min.css.map
 index.min.js
 index.min.js.map
 manifest.json
-assets/apple-touch-icon.png
-assets/apple-touch-icon.xcf
 bower_components/angular-gestures/LICENSE.md
 bower_components/angular-gestures/README.md
 bower_components/angular-gestures/bower.json
@@ -47,8 +47,6 @@ bower_components/sprintf/bower.json
 bower_components/sprintf/gruntfile.js
 bower_components/sprintf/package.json
 bower_components/angular-ui-router/api/angular-ui-router.d.ts
-bower_components/angular-ui-router/release/angular-ui-router.js
-bower_components/angular-ui-router/release/angular-ui-router.min.js
 bower_components/angular-ui-router/src/common.js
 bower_components/angular-ui-router/src/resolve.js
 bower_components/angular-ui-router/src/state.js
@@ -103,9 +101,11 @@ bower_components/sprintf/dist/sprintf.min.map
 bower_components/sprintf/src/angular-sprintf.js
 bower_components/sprintf/src/sprintf.js
 bower_components/sprintf/test/test.js
+bower_components/angular-ui-router/release/angular-ui-router.js
+bower_components/angular-ui-router/release/angular-ui-router.min.js
 
 
 NETWORK:
 *
 
-# hash: b73302ae12c1704bdbabc930100dcc3683ff356b9c3b261b2fc1563c3463c418
+# hash: 7ba612b7e7ebfe925d75042dbdd698882768403032598ce294171fe68799fc48
