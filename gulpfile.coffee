@@ -22,10 +22,6 @@ gulp.task "build", ->
 
   isDevelopment = process.env.NODE_ENV == "development"
 
-  if not isDevelopment
-    gulp.src "bower_components/**/*", base: "."
-      .pipe gulp.dest "public"
-
   gulp.src [ "src/**/*.jade", "!src/**/*.tpl.jade" ]
     .pipe plugins.plumber()
     .pipe plugins.inject es.merge([
@@ -60,8 +56,24 @@ gulp.task "build", ->
         .pipe plugins.if not isDevelopment, plugins.rename suffix: ".min"
         .pipe plugins.sourcemaps.write "."
         .pipe gulp.dest "public"
+      gulp.src "src/**/*.yaml"
+        .pipe plugins.plumber()
+        .pipe plugins.yaml(space: if isDevelopment then 2 else null)
+        .pipe gulp.dest "public"
     ]), ignorePath: "public", addRootSlash: false
     .pipe plugins.jade pretty: isDevelopment
+    .pipe gulp.dest "public"
+
+gulp.task "bower", ->
+  gulp.src "bower_components/**/*", base: "."
+    .pipe gulp.dest "public"
+
+gulp.task "manifest", [ "build", "bower" ], ->
+  gulp.src "public/**/*"
+    .pipe plugins.manifest
+      hash: true
+      filename: "mtg.appcache"
+      exclude: "mtg.appcache"
     .pipe gulp.dest "public"
 
 gulp.task "deploy", [ "build" ], ->
