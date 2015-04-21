@@ -24,11 +24,6 @@ bower_components/angular-gestures/README.md
 bower_components/angular-gestures/bower.json
 bower_components/angular-gestures/gestures.js
 bower_components/angular-gestures/gestures.min.js
-bower_components/angular-ui-router/CHANGELOG.md
-bower_components/angular-ui-router/CONTRIBUTING.md
-bower_components/angular-ui-router/LICENSE
-bower_components/angular-ui-router/README.md
-bower_components/angular-ui-router/bower.json
 bower_components/font-awesome/bower.json
 bower_components/hammerjs/CHANGELOG.md
 bower_components/hammerjs/CONTRIBUTING.md
@@ -46,20 +41,11 @@ bower_components/sprintf/README.md
 bower_components/sprintf/bower.json
 bower_components/sprintf/gruntfile.js
 bower_components/sprintf/package.json
-bower_components/angular-ui-router/api/angular-ui-router.d.ts
-bower_components/angular-ui-router/release/angular-ui-router.js
-bower_components/angular-ui-router/release/angular-ui-router.min.js
-bower_components/angular-ui-router/src/common.js
-bower_components/angular-ui-router/src/resolve.js
-bower_components/angular-ui-router/src/state.js
-bower_components/angular-ui-router/src/stateDirectives.js
-bower_components/angular-ui-router/src/stateFilters.js
-bower_components/angular-ui-router/src/templateFactory.js
-bower_components/angular-ui-router/src/urlMatcherFactory.js
-bower_components/angular-ui-router/src/urlRouter.js
-bower_components/angular-ui-router/src/view.js
-bower_components/angular-ui-router/src/viewDirective.js
-bower_components/angular-ui-router/src/viewScroll.js
+bower_components/angular-ui-router/CHANGELOG.md
+bower_components/angular-ui-router/CONTRIBUTING.md
+bower_components/angular-ui-router/LICENSE
+bower_components/angular-ui-router/README.md
+bower_components/angular-ui-router/bower.json
 bower_components/font-awesome/css/font-awesome.css
 bower_components/font-awesome/css/font-awesome.css.map
 bower_components/font-awesome/css/font-awesome.min.css
@@ -103,9 +89,23 @@ bower_components/sprintf/dist/sprintf.min.map
 bower_components/sprintf/src/angular-sprintf.js
 bower_components/sprintf/src/sprintf.js
 bower_components/sprintf/test/test.js
+bower_components/angular-ui-router/api/angular-ui-router.d.ts
+bower_components/angular-ui-router/release/angular-ui-router.js
+bower_components/angular-ui-router/release/angular-ui-router.min.js
+bower_components/angular-ui-router/src/common.js
+bower_components/angular-ui-router/src/resolve.js
+bower_components/angular-ui-router/src/state.js
+bower_components/angular-ui-router/src/stateDirectives.js
+bower_components/angular-ui-router/src/stateFilters.js
+bower_components/angular-ui-router/src/templateFactory.js
+bower_components/angular-ui-router/src/urlMatcherFactory.js
+bower_components/angular-ui-router/src/urlRouter.js
+bower_components/angular-ui-router/src/view.js
+bower_components/angular-ui-router/src/viewDirective.js
+bower_components/angular-ui-router/src/viewScroll.js
 
 
 NETWORK:
 *
 
-# hash: 1ff2dd7f546406fcae7c4e1c1b9bc78418a369b42b7e252c7e97b3b6fd5690ec
+# hash: b3b2ac26f91e3e843c20c7b85d9cf1c18f68b5d4afc20094fc58e8adb48dc5f0
