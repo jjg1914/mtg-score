@@ -28,5 +28,7 @@ angular.module("mtg").controller "mtgIndexController", ($scope,$timeout,
   $scope.invertScore = (player) ->
     if player.historyLatest?
       player.historyLatest *= -1
-      mtgVibrate 20
+    else
+      player.historyLatest = 1
+    mtgVibrate 20
     _saveHistory player
