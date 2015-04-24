@@ -1,8 +1,9 @@
 .mtg-score-board
   .mtg-score(ng-repeat="player in players")
     .mtg-score-display
-      span.mtg-jumbo(hm-tap="decrementScore(player)" hm-hold="invertScore(player)")
-        | {{ player | mtgScoreFormat : settings.initialScore }}
+      .mtg-score-hitbox(hm-tap="decrementScore(player)" hm-hold="invertScore(player)")
+        span.mtg-jumbo
+          | {{ player | mtgScoreFormat : settings.initialScore }}
     .mtg-score-history-latest(
         ng-if="player.historyLatest != null"
         hm-hold="clearScore(player)")

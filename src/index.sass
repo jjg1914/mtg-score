@@ -52,7 +52,9 @@ nav
     max-height: 15em
 
 .mtg-jumbo
+  display: inline-block
   font-size: 400%
+  box-sizing: border-box
 
 .mtg-text-muted
   color: #989898
@@ -97,8 +99,12 @@ nav
   position: absolute
   top: 50%
   width: 100%
-  cursor: pointer
   transform: translate(0, -50%)
+
+.mtg-score-hitbox
+  display: inline-block
+  padding: 1em
+  cursor: pointer
 
 .mtg-score-history
   position: absolute
