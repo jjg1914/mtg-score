@@ -24,6 +24,10 @@ angular.module("mtg").controller "mtgController", ($scope,$state) ->
 
   $scope.navigate = (e) ->
     direction = if e.direction == Hammer.DIRECTION_LEFT then 1 else -1
-    index = _navigate.indexOf($state.current.name) + direction
-    if index >= 0 and index < _navigate.length
-      $state.go _navigate[index]
+    index = _navigate.indexOf($state.current.name)
+    if index == -1
+      $state.go "index"
+    else
+      index += direction
+      if index >= 0 and index < _navigate.length
+        $state.go _navigate[index]

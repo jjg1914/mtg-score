@@ -8,6 +8,10 @@ angular.module("mtg").config ($stateProvider,$urlRouterProvider) ->
       url: "/menu"
       templateUrl: "mtg/mtg-menu.tpl.html"
       controller: "mtgMenuController"
+    .state "roll",
+      url: "/roll"
+      templateUrl: "mtg/mtg-roll.tpl.html"
+      controller: "mtgRollController"
     .state "settings",
       url: "/settings"
       templateUrl: "mtg/mtg-settings.tpl.html"
