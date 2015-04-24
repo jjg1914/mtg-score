@@ -6,4 +6,5 @@ angular.module("mtg").directive "mtgBooleanInput", (mtgVibrate)->
   templateUrl: "mtg/mtg-boolean-input.tpl.html"
   link: ($scope) ->
     $scope.toggle = ->
+      mtgVibrate 20
       $scope.value = !$scope.value
