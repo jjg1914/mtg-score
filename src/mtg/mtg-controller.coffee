@@ -19,8 +19,17 @@ angular.module("mtg").controller "mtgController", ($scope,$state) ->
     }
   ]
 
-  $scope.settings =
-    initialScore: 20
+  if localStorage["mtg-settings"]
+    $scope.settings = JSON.parse localStorage["mtg-settings"]
+  else
+    $scope.settings =
+      initialScore: 20
+      roll: 10
+      rollOffset: false
+      scoreDelay: 5
+
+  window.addEventListener "beforeunload", ->
+    localStorage["mtg-settings"] = JSON.stringify $scope.settings
 
   $scope.navigate = (e) ->
     direction = if e.direction == Hammer.DIRECTION_LEFT then 1 else -1

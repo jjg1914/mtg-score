@@ -8,7 +8,7 @@ angular.module("mtg").controller "mtgIndexController", ($scope,$timeout,
       player.history.push player.historyLatest if player.historyLatest
       player.historyLatest = null
       delete player.historyTimeout
-    , 5000
+    , $scope.settings.scoreDelay * 1000
 
   $scope.decrementScore = (player) ->
     if player.historyLatest?

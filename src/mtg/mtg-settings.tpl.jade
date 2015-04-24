@@ -1,4 +1,14 @@
 form
   .mtg-form-input
     label(for="initial-score") Initial Score
-    mtg-number-input(value="settings.initialScore")
+    mtg-number-input(value="settings.initialScore" min="10" max="50" step="10")
+  .mtg-form-input
+    label(for="score-delay")
+      | Score Delay 
+    mtg-number-input(value="settings.scoreDelay" min="1" max="10")
+  .mtg-form-input
+    label(for="roll") Roll
+    mtg-number-input(value="settings.roll" min="6" max="20")
+  .mtg-form-input
+    label(for="roll-offset") Roll Offset
+    mtg-boolean-input(value="settings.rollOffset")

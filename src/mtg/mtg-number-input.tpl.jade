@@ -1,11 +1,11 @@
 .mtg-input.mtg-number-input
-  .mtg-number-input-display {{ value }}
+  .mtg-number-input-display {{ format | sprintf : value }}
   .mtg-number-input-control
     span.mtg-number-input-control-item(
-      ng-class="{'mtg-text-muted': value >= 50}"
+      ng-class="{'mtg-text-muted': value >= max}"
       hm-tap="increment()")
       | +
     span.mtg-number-input-control-item(
-      ng-class="{'mtg-text-muted': value <= 10}"
+      ng-class="{'mtg-text-muted': value <= min}"
       hm-tap="decrement()")
       | &#8722;

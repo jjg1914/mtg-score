@@ -2,11 +2,15 @@ angular.module("mtg").controller "mtgRollController", ($scope,$interval) ->
   $scope.toggleRoll = ->
     unless $scope.interval?
       $scope.interval = $interval ->
-        value while (value = Math.floor(Math.random() * 10)) == $scope.value
+        value = $scope.value
+        while value == $scope.value
+          value = Math.floor(Math.random() * $scope.settings.roll)
+          value += 1 if $scope.settings.rollOffset
         $scope.value = value
       , 100
     else
-      $scope.value = Math.floor(Math.random() * 10)
+      $scope.value = Math.floor(Math.random() * $scope.settings.roll)
+      $scope.value += 1 if $scope.settings.rollOffset
       $interval.cancel $scope.interval
       delete $scope.interval
 
