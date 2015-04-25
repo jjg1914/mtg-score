@@ -1,6 +1,6 @@
 {
   "name": "mtg",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A Magic the Gathering App",
   "main": "index.coffee",
   "scripts": {
