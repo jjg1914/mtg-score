@@ -16,7 +16,52 @@
         ],
         "production": [
           "dist/sprintf.min.js",
-          "dist/angular-sprintf.min.js"
+          "dist/angular-sprintf.min.js",
+          "dist/sprintf.min.map",
+          "dist/angular-sprintf.min.map"
+        ]
+      }
+    },
+    "angular-gestures": {
+      "main": {
+        "development": "gestures.js",
+        "production": "gestures.min.js"
+      }
+    },
+    "angular-ui-router": {
+      "main": {
+        "development": "release/angular-ui-router.js",
+        "production": "release/angular-ui-router.min.js"
+      }
+    },
+    "angular": {
+      "main": {
+        "development": "angular.js",
+        "production": [
+          "angular.min.js",
+          "angular.min.js.map"
+        ]
+      }
+    },
+    "font-awesome": {
+      "main": {
+        "development": [
+          "css/font-awesome.css",
+          "fonts/*"
+        ],
+        "production": [
+          "css/font-awesome.min.css",
+          "css/font-awesome.css.map",
+          "fonts/*"
+        ]
+      }
+    },
+    "hammerjs": {
+      "main": {
+        "development": "hammer.js",
+        "production": [
+          "hammer.min.js",
+          "hammer.min.map"
         ]
       }
     }

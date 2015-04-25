@@ -9,7 +9,10 @@ process.env.NODE_ENV ?= "production"
 
 gulp.task "default", [ "server", "watch" ]
 
-gulp.task "server", [ "build" ], (done) ->
+gulp.task "server", [
+    ( if process.env.NODE_ENV == "development" then "build" else "manifest" )
+  ], (done) ->
+
   require "./index"
   process.on "SIGINT", ->
     done()
@@ -18,7 +21,6 @@ gulp.task "server", [ "build" ], (done) ->
 gulp.task "build", ->
   tplFilter = plugins.filter "**/*.tpl.jade"
   coffeeFilter = plugins.filter "**/*.coffee"
-  bowerFilter = plugins.filter [ "**/*", "!**/*.min.*" ]
 
   isDevelopment = process.env.NODE_ENV == "development"
 
@@ -26,9 +28,6 @@ gulp.task "build", ->
     .pipe plugins.plumber()
     .pipe plugins.inject es.merge([
       gulp.src mainBowerFiles(), read: false
-        .pipe bowerFilter
-        .pipe plugins.if not isDevelopment, plugins.rename suffix: ".min"
-        .pipe bowerFilter.restore()
       gulp.src [ "src/**/*.coffee", "src/**/*.tpl.jade" ]
         .pipe plugins.plumber()
         .pipe plugins.sourcemaps.init()
@@ -65,7 +64,7 @@ gulp.task "build", ->
     .pipe gulp.dest "public"
 
 gulp.task "bower", ->
-  gulp.src "bower_components/**/*", base: "."
+  gulp.src mainBowerFiles(), base: "."
     .pipe gulp.dest "public"
 
 gulp.task "assets", ->
