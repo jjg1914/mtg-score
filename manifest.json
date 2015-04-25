@@ -1,1 +1,1 @@
-{"name":"MTG-Score","manifest_version":2,"version":"0.2.0","default_locale":"en","description":"A Magic the Gathering App","display":"standalone","icons":[{"src":"apple-touch-icon.png","sizes":"144x144","type":"image/png","density":"1.0"}]}
+{"name":"MTG-Score","manifest_version":2,"version":"0.3.0","default_locale":"en","description":"A Magic the Gathering App","display":"standalone","icons":[{"src":"apple-touch-icon.png","sizes":"144x144","type":"image/png","density":"1.0"}]}
